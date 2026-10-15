@@ -1,0 +1,26 @@
+@media print {
+  body.customer-quotation-print-active * {
+    visibility: hidden;
+  }
+
+  body.customer-quotation-print-active #customer-quotation-document-root,
+  body.customer-quotation-print-active #customer-quotation-document-root * {
+    visibility: visible;
+  }
+
+  body.customer-quotation-print-active #customer-quotation-document-root {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 12mm;
+    box-shadow: none;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+}
